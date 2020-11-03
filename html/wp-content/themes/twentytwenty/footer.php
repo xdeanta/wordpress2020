@@ -23,14 +23,14 @@
 							echo date_i18n(
 								/* translators: Copyright date format, see https://www.php.net/date */
 								_x( 'Y', 'copyright date format', 'twentytwenty' )
-							);
+							)
 							?>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo 'OwO'//bloginfo( 'name' ); ?></a>
 						</p><!-- .footer-copyright -->
 
 						<p class="powered-by-wordpress">
 							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentytwenty' ) ); ?>">
-								<?php _e( 'Powered by WordPress', 'twentytwenty' ); ?>
+								<?php _e( 'Powered by Xavier', 'twentytwenty' ); ?>
 							</a>
 						</p><!-- .powered-by-wordpress -->
 
@@ -42,6 +42,7 @@
 							/* translators: %s: HTML character for up arrow. */
 							printf( __( 'To the top %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
 							?>
+                            <img src="https://ih1.redbubble.net/image.622548869.3699/flat,1000x1000,075,f.u3.jpg" width="100" height="100">
 						</span><!-- .to-the-top-long -->
 						<span class="to-the-top-short">
 							<?php

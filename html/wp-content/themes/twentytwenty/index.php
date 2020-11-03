@@ -18,7 +18,7 @@ get_header();
 ?>
 
 <main id="site-content" role="main">
-
+    <h1>hola</h1>
 	<?php
 
 	$archive_title    = '';
