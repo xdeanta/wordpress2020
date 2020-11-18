@@ -7,37 +7,28 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<?php get_header(); ?>
-<h1><?php /*bloginfo( 'name' );*/ echo "Xavier Site"?></h1>
-<h2><?php bloginfo( 'description' ); ?></h2>
+<?php get_header();
+echo "<h1>Xavier Site</h1>";
+echo "<h2>" . bloginfo( 'nada' ) . "</h2>";
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-    <h3><?php the_title(); ?></h3>
-
-    <?php the_content(); ?>
-    <?php wp_link_pages(); ?>
-    <?php edit_post_link(); ?>
-
-<?php endwhile; ?>
-
-    <?php
+if ( have_posts() ) {
+    while ( have_posts() ) {
+        the_post();
+        echo "<h3>" .the_title() . "</h3>";
+        the_content();
+        wp_link_pages();
+        edit_post_link();
+    }
     if ( get_next_posts_link() ) {
         next_posts_link();
     }
-    ?>
-    <?php
     if ( get_previous_posts_link() ) {
         previous_posts_link();
     }
-    ?>
-
-<?php else: ?>
-
-    <p>No posts found. :(</p>
-
-<?php endif; ?>
-<?php  get_footer();?>
-<?php  wp_footer();?>
+    }else{
+        echo "<p>No posts found. :(</p>";
+    }
+get_footer();
+wp_footer();?>
 </body>
 </html>
