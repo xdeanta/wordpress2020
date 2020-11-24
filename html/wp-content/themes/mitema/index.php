@@ -9,7 +9,7 @@
 <body>
 <?php get_header();
 echo "<h1>Xavier Site</h1>";
-echo "<h2>" . bloginfo( 'nada' ) . "</h2>";
+//echo "<h2>" . bloginfo( 'nada' ) . "</h2>";
 
 if ( have_posts() ) {
     while ( have_posts() ) {
