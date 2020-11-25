@@ -1,6 +1,7 @@
-<h1>
-    <div class="header-img">
-    <!--<img src="<?php //echo get_stylesheet_directory_uri();?>/images/renamon.png" width="150" height="150"/> -->
-    <?php echo "Headerrrrrrr"; ?>
+<div class="Header-ImageBox">
+    <div class="Header-ImageText">
+        <h1>
+            <?php echo "Headerrrr"?>
+        </h1>
     </div>
-</h1>
+</div>

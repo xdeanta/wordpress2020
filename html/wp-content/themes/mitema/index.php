@@ -14,10 +14,12 @@ echo "<h1>Xavier Site</h1>";
 if ( have_posts() ) {
     while ( have_posts() ) {
         the_post();
-        echo "<h3>" .the_title() . "</h3>";
-        the_content();
-        wp_link_pages();
-        edit_post_link();
+        the_title('<h2>','</h2>');
+        the_excerpt();
+        the_shortlink();
+        echo "<br>\n<br>";
+        //wp_link_pages();
+        //edit_post_link();
     }
     if ( get_next_posts_link() ) {
         next_posts_link();
