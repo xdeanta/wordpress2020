@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
+    <?php wp_head(); ?>
+</head>
+<body>
 <?php
 /**
  * The template for displaying single posts and pages.
@@ -12,7 +19,6 @@
 get_header();
 ?>
 
-<main id="site-content" role="main">
 
 	<?php
 
@@ -20,6 +26,7 @@ get_header();
 
 		while ( have_posts() ) {
 			the_post();
+            the_post_thumbnail();
             the_content();
 			//get_template_part( 'template-parts/content', get_post_type() );
 		}
@@ -27,8 +34,10 @@ get_header();
 
 	?>
 
-</main><!-- #site-content -->
+<!-- #site-content -->
 
 <?php //get_template_part( 'template-parts/footer-menus-widgets' ); ?>
 
 <?php get_footer(); ?>
+</body>
+</html>
