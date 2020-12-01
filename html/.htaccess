@@ -4,3 +4,4 @@
 # Cualquier cambio en las directivas que hay entre esos marcadores serán sobrescritas.
 
 # END WordPress
+ErrorDocument 404 /index.php?error=404

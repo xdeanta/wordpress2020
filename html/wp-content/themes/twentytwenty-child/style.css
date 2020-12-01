@@ -4065,14 +4065,17 @@ div.comment:first-of-type {
 
 
 .error404 #site-content {
+	background-color: #1da1f2;
 	padding-top: 4rem;
 }
 
 .error404-content {
+	background-color: #0A246A;
 	text-align: center;
 }
 
 .error404 #site-content .search-form {
+	background-color : #00cc66;
 	justify-content: center;
 	margin-top: 3rem;
 }
